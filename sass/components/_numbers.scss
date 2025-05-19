@@ -1,0 +1,26 @@
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>div {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        background: aliceblue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-right: 8rem;
+        }
+    }
+}
+
+.active {
+    background: #2A4759 !important;
+    color: aliceblue;
+}

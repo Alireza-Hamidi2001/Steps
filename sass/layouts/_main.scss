@@ -1,0 +1,92 @@
+.main {
+    min-height: 75vh;
+    background: #8A2D3B;
+    padding: 5rem;
+    position: relative;
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 60rem;
+        
+        @include respond(phone) {
+            min-width: 80%;
+        }
+
+        &>*:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        color: aliceblue;
+    }
+
+    &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: aliceblue;
+        margin: 0 1rem;
+
+
+    }
+}
+
+button {
+    border: none;
+    background: #2A4759;
+    padding: 0.5rem 2rem;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    color: aliceblue;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Coiny", sans-serif;
+
+
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: translateY(-0.2rem);
+    }
+}
+
+.button__container {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+}
+
+
+.main__cross {
+    text-align: right;
+}
+
+.main__icon-cross {
+    fill: aliceblue;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+
+    @include respond(phone) {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.hide {
+    display: none;
+}
